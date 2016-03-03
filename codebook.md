@@ -11,13 +11,11 @@
 
 Test and training data, subject-ids and activity-ids are merged to a single data set. Assinging the variables with names by the features list.
 
-**data file**
+**data file**:
 
-X_train.txt, X_test.txt (**row-bind**)
-
-y_train.txt, y_test.txt (**row-bind**)
-
-subject_train.txt, subject_test.txt (**row-bind**)
+* X_train.txt, X_test.txt (**row-bind**)
+* y_train.txt, y_test.txt (**row-bind**)
+* subject_train.txt, subject_test.txt (**row-bind**)
 
 ## Data selection
 
@@ -25,18 +23,18 @@ Selection only the set variables mean value (mean()) and standard deviation (std
 
 Using the activity values:
 
-1: WALKING
-2: WALKING_UPSTAIRS
-3: WALKING_DOWNSTAIRS
-4: SITTING
-5: STANDING
-6: LAYING
+* 1: WALKING
+* 2: WALKING_UPSTAIRS
+* 3: WALKING_DOWNSTAIRS
+* 4: SITTING
+* 5: STANDING
+* 6: LAYING
 
 ## Changing labels
 
-t -> time
-f -> frequency
-Acc -> Accelerometer
-Gyro -> Gyroscope
-Mag -> Magnitude
-BodyBody -> Body
+* t -> time
+* f -> frequency
+* Acc -> Accelerometer
+* Gyro -> Gyroscope
+* Mag -> Magnitude
+* BodyBody -> Body
