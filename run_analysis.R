@@ -39,7 +39,7 @@ run_analysis <- function() {
 	xTest <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
 	yTest <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
 
-	# Createing cols Sub, Features and Activity with meanfull names
+	# Creating cols Sub, Features and Activity with meanfull names
 	colSub <- rbind(subTrain, subTest)
 	names(colSub) <- c("Subject")
 
@@ -80,8 +80,5 @@ run_analysis <- function() {
 	data2<-aggregate(. ~Subject + Activity, data, mean)
 	data2<-data2[order(data2$Subject,data2$Activity),]
 	write.table(data2, file = "tidydata.txt",row.name=FALSE)
-
-	### Create Codebook
-	knit2html("codebook.Rmd")
 
 }
