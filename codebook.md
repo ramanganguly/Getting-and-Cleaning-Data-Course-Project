@@ -11,7 +11,8 @@
 
 Test and training data, subject-ids and activity-ids are merged to a single data set. Assinging the variables with names by the features list.
 
-| | **data file** | **data file** |
+|     | **data file** | **data file** |
+| --- | ––– | ––– |
 | **row-bind** | X_train.txt | X_test.txt |
 | **row-bind** | y_train.txt | y_test.txt |
 | **row-bind** | subject_train.txt | subject_test.txt |
